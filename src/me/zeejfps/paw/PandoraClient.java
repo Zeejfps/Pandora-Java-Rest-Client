@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class PandoraRestfulClient {
+public class PandoraClient {
 
     private static final String BASE_URL = "https://www.pandora.com";
     private static final String API_URL = BASE_URL + "/api";
@@ -32,7 +32,7 @@ public class PandoraRestfulClient {
     private Account account;
     private Station[] stations;
 
-    public PandoraRestfulClient() {
+    public PandoraClient() {
         gson = new Gson();
         httpClient = new OkHttpClient.Builder()
             .cookieJar(new MyCookieJar())
